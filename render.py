@@ -1,3 +1,9 @@
+"""
+The Render Class processes all visual elements of the application by 
+rendering meshes relative to the intended acoustics simulations.
+"""
+
+
 from direct.showbase.ShowBase import ShowBase, loadPrcFileData
 from panda3d.core import Vec3, TextureStage
 import math, sys, simplepbr, os.path as path
@@ -5,7 +11,7 @@ import math, sys, simplepbr, os.path as path
 # Enable the assimp loader so that .obj files can be loaded.
 loadPrcFileData("", "load-file-type p3assimp")
 
-class MyApp(ShowBase):
+class Render(ShowBase):
 
     def load_obj(self, filename) -> None:
         """Load a model from a .obj file.
@@ -184,10 +190,15 @@ class MyApp(ShowBase):
         self.camera.lookAt(self.target)
         return newPos
 
-if __name__ == "__main__":
 
-    # Default loaded model to the cottage, but can be changed via command line.
-    model_name: str = 'resources/cottage_obj.obj' if (len(sys.argv) < 2) else sys.argv[1]
+"""
+To be removed later, as the application would ideally be run from a parent file
+handling pyroomacoustics and panda3D together.
+"""
+# if __name__ == "__main__":
 
-    app = MyApp(filename=model_name)
-    app.run()
+#     # Default loaded model to the cottage, but can be changed via command line.
+#     model_name: str = 'resources/cottage_obj.obj' if (len(sys.argv) < 2) else sys.argv[1]
+
+#     app = Render(filename=model_name)
+#     app.run()
