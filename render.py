@@ -12,6 +12,14 @@ from direct.gui.OnscreenText import OnscreenText
 # Enable the assimp loader so that .obj files can be loaded.
 loadPrcFileData("", "load-file-type p3assimp")
 
+CAMERA_DIST: float = 10.0      # Distance from camera to object
+MIN_DIST: float = 0.0          # Minimum zoom distance
+MAX_DIST: float = 15.0         # Maximum zoom distance
+CAMERA_HEADING: float = 35.0   # Horizontal rotation angle
+CAMERA_PITCH: float = 35.0     # Vertical rotation angle
+MIN_PITCH: float = 0.0         # Limit looking down
+MAX_PITCH: float = 85.0        # Limit looking up
+
 class Render(ShowBase):
 
     def load_base(self, name) -> None:
