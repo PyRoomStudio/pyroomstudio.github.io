@@ -9,7 +9,7 @@ class App():
         self.name = 'App'
         self.model = None
         self.render = Render(filename=model_name)
-        self.acoustic = Acoustic()
+        self.acoustic = Acoustic(filename=model_name)
 
     def run(self):
 
