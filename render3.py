@@ -10,7 +10,7 @@ from acoustic import Acoustic
 import collections
 import random
 
-class Render:
+class Render3:
     def __init__(self, filename, width=800, height=600):
         pygame.init()
         self.width = width

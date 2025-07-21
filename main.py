@@ -1,4 +1,7 @@
-from render3 import Render
+from render3 import Render3
+# Trimesh rendering
+# TODO: Can trimesh handle GUI elements and model interaction?
+#from render4 import Render4
 import sys
 import time
 import pygame
@@ -8,7 +11,7 @@ from OpenGL.GL import *
 class App():
     def __init__(self, model_name):
         self.name = 'App'
-        self.render = Render(filename=model_name)
+        self.render = Render3(filename=model_name)
         self.running = True
 
     def run(self):
