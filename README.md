@@ -1,6 +1,10 @@
-<p align="center">
+<!-- <p align="center">
   <img width="180" src="assets/logo_v2.png" alt="PyRoomStudio">
   <p align="center"><b><font size=32px>PyRoomStudio</font></b></p>
+</p> -->
+
+<p align="center">
+  <img width="400" src="assets/logo_v3_w_text.svg" alt="PyRoomStudio">
 </p>
 
 ---
